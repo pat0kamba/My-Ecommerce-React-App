@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.stacked{
+    display:grid;
+    aspect-ratio:1/1.5;
+}
+
+.stacked > *
+{
+    grid-column: 1/2;
+    grid-row:1/2;
+}
+ 
+.gridContent{
+    align-self:end;
+    padding:10px;
+    background-color:#fff;
+}
+
+.all_gridContent, .button_gridContent{
+    align-self:end;
+    padding:30px;
+}
+.button_gridContent{
+    justify-self:center;
+}
+
+.product_img{
+    object-fit:cover;
+    object-position:center; 
+    cursor:pointer;
+}
+
+
+
+.popupCart{
+    position:absolute;
+    right:5px;
+    top:60px;
+    z-index:1000;
+    
+}
+
+.shopping:hover{
+    cursor:pointer;
+}
+
+.product_img:hover{
+    height:100%;
+    display:"block";
+}
+
+
+
